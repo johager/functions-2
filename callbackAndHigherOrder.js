@@ -210,6 +210,7 @@ getUserById(users, '16t', user => {
   the two parameters together and return the sum.
 */
 
+// the following comment block is the code from the lecture
 /*
 const createAdder = x => (y) => x + y
 
@@ -220,8 +221,6 @@ const createAdder = x => (y) => x + y
 //    }
 //}
 */
-
-
 
 const addingFactory = (num) => {
   return function(num2) {
