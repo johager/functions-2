@@ -103,12 +103,14 @@ contains(names, 'Colt', result => {
   Hint: you can use a nested for loop to do this.
 */
 
-const uniq = (arr, callback) => {
-  let uniqueSet = new Set(arr)
-  // let uniqueArr = Array.from(uniqueSet)
-  // callback(uniqueArr)
-  callback(Array.from(uniqueSet))
-}
+// const uniq = (arr, callback) => {
+//   let uniqueSet = new Set(arr)
+//   // let uniqueArr = Array.from(uniqueSet)
+//   // callback(uniqueArr)
+//   callback(Array.from(uniqueSet))
+// }
+
+const uniq = (arr, callback) => callback(Array.from(set = new Set(arr)))
 
 /*
   Invoke the uniq function, passing in the names array from above and a callback function.
